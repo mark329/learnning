@@ -18,6 +18,6 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="src/main/java/blogmapper/BlogMapper.xml"/>
+    <mapper resource="EmployeeMapper.xml"/>
   </mappers>
 </configuration>
