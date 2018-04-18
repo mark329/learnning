@@ -5,6 +5,19 @@
   
 <configuration>
   <properties resource="jdbc.properties"></properties>
+  <!-- 驼峰命名开启 -->
+  <settings>
+  	<setting name="mapUnderscoreToCamelCase" value="true"/>
+  </settings>
+   <!-- 别名处理器 ,不區分大小寫-->
+ <!--  <typeAliases>
+  	<typeAlias type="bean.Employee" alias="emp" />
+  </typeAliases> -->
+  <!-- 批量别名，并可以alian另起一个新名字-->
+  <typeAliases>
+  	<package name="bean"/>
+  </typeAliases>
+  
   
   <environments default="development">
     <environment id="development">
@@ -17,6 +30,7 @@
       </dataSource>
     </environment>
   </environments>
+  
   <mappers>
     <mapper resource="EmployeeMapper.xml"/>
   </mappers>

@@ -1,5 +1,8 @@
 package bean;
 
+import org.apache.ibatis.type.Alias;
+
+@Alias("ee")
 public class Employee {
 
 	private Long id;
