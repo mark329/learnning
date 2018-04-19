@@ -1,4 +1,4 @@
-package bean;
+package com.nick.model;
 
 public class Blog {
 	private Long id;

@@ -1,10 +1,6 @@
-package bean;
+package com.nick.model;
 
-import org.apache.ibatis.type.Alias;
-
-@Alias("ee")
 public class Employee {
-
 	private Long id;
 	private String lastName;
 	private String email;
